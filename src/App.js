@@ -1,13 +1,18 @@
-import Product from './Product';
+//import Car from './Car';
+import Goal from './Goal';
+//import Product from './Product';
 
 function App() {
   return (
     <div>
-      <h1>Hello App Mohsen</h1>
-       <hr/>
-        <Product price="3000" color="red" />
-        <Product price="2000" color="blue" />
-        <Product price="8000" color="green" />
+{/*         
+         <h1>Hello App Mohsen</h1>
+        <Car />
+        <hr/>
+        <Car Speed="40000"/>
+        <Product price="4000" color="Red"/> */}
+      <Goal isGoal={true}/>
+     
     </div>
   );
 }
