@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071326" />
+    <meta name="description" content="وب‌سایت شخصی محسن زمانی" />
+    <title>Mohsen Zamani | صفحه اصلی</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- نوار ناوبری اصلی وب‌سایت -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="منوی اصلی">
+        <div class="container-fluid site-container">
+          <a class="navbar-brand brand" href="#home" aria-label="Mohsen Zamani، صفحه اصلی">
+            <span class="brand-mark" aria-hidden="true"><i class="bi bi-stars"></i></span>
+            <span class="brand-name">Mohsen Zamani</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#primaryNav"
+            aria-controls="primaryNav"
+            aria-expanded="false"
+            aria-label="باز و بسته کردن منو"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="primaryNav">
+            <ul class="navbar-nav align-items-lg-center mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">
+                  <i class="bi bi-house-door nav-icon" aria-hidden="true"></i><span>خانه</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown nav-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-vcard nav-icon" aria-hidden="true"></i><span>درباره من</span>
+                  <i class="bi bi-chevron-down nav-caret" aria-hidden="true"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#about-intro"><i class="bi bi-person nav-icon" aria-hidden="true"></i>معرفی من</a></li>
+                  <li><a class="dropdown-item" href="#about-skills"><i class="bi bi-lightning-charge nav-icon" aria-hidden="true"></i>مهارت‌ها</a></li>
+                  <li><a class="dropdown-item" href="#about-experience"><i class="bi bi-briefcase nav-icon" aria-hidden="true"></i>تجربه کاری</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-grid nav-icon" aria-hidden="true"></i><span>خدمات</span>
+                  <i class="bi bi-chevron-down nav-caret" aria-hidden="true"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#service-design"><i class="bi bi-palette nav-icon" aria-hidden="true"></i>طراحی رابط کاربری</a></li>
+                  <li><a class="dropdown-item" href="#service-development"><i class="bi bi-code-slash nav-icon" aria-hidden="true"></i>توسعه وب</a></li>
+                  <li><a class="dropdown-item" href="#service-consulting"><i class="bi bi-chat-square-text nav-icon" aria-hidden="true"></i>مشاوره و همکاری</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-window-stack nav-icon" aria-hidden="true"></i><span>نمونه‌کارها</span>
+                  <i class="bi bi-chevron-down nav-caret" aria-hidden="true"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#portfolio-web"><i class="bi bi-window nav-icon" aria-hidden="true"></i>پروژه‌های وب</a></li>
+                  <li><a class="dropdown-item" href="#portfolio-ui"><i class="bi bi-phone nav-icon" aria-hidden="true"></i>رابط‌های کاربری</a></li>
+                  <li><a class="dropdown-item" href="#portfolio-all"><i class="bi bi-collection nav-icon" aria-hidden="true"></i>همه پروژه‌ها</a></li>
+                </ul>
+              </li>
+              <li class="nav-item nav-contact-item">
+                <a class="nav-link" href="#contact">
+                  <i class="bi bi-envelope nav-icon" aria-hidden="true"></i><span>تماس</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="nav-actions dropdown">
+              <button
+                class="auth-link auth-account dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-circle" aria-hidden="true"></i>
+                <span>ورود / ثبت‌نام</span>
+                <i class="bi bi-chevron-down auth-caret" aria-hidden="true"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end auth-menu">
+                <li>
+                  <a class="dropdown-item" href="#login" data-close-mobile-nav>
+                    <i class="bi bi-box-arrow-in-left nav-icon" aria-hidden="true"></i>ورود به حساب
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#signup" data-close-mobile-nav>
+                    <i class="bi bi-person-plus nav-icon" aria-hidden="true"></i>ساخت حساب کاربری
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home" class="visually-hidden">
+      <h1>صفحه اصلی وب‌سایت Mohsen Zamani</h1>
+    </main>
+
+    <!-- بخش فوتر: راه‌های ارتباطی، شبکه‌های اجتماعی و حق نشر سایت -->
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <div class="footer-main row g-4">
+          <section class="col-lg-5" aria-labelledby="footer-quick-title">
+            <h2 class="footer-heading" id="footer-quick-title">لینک‌های پرتکرار</h2>
+            <!-- لینک‌های اصلی سایت برای دسترسی سریع در فوتر -->
+            <nav class="footer-quick-links" aria-label="لینک‌های پرتکرار">
+              <a href="#home"><i class="bi bi-house-door" aria-hidden="true"></i><span>خانه</span></a>
+              <a href="#about"><i class="bi bi-person" aria-hidden="true"></i><span>درباره من</span></a>
+              <a href="#services"><i class="bi bi-grid" aria-hidden="true"></i><span>خدمات</span></a>
+              <a href="#portfolio"><i class="bi bi-window-stack" aria-hidden="true"></i><span>نمونه‌کارها</span></a>
+              <a href="#contact"><i class="bi bi-envelope" aria-hidden="true"></i><span>تماس</span></a>
+            </nav>
+          </section>
+
+          <section class="col-sm-6 col-lg-4" aria-labelledby="footer-social-title">
+            <h2 class="footer-heading" id="footer-social-title">شبکه‌های اجتماعی</h2>
+            <!-- جای‌نگهدار: برای فعال‌شدن شبکه‌ها، نشانی حساب‌های واقعی را جایگزین کنید. -->
+            <div class="footer-social-list">
+              <span class="footer-social-item"><i class="bi bi-instagram" aria-hidden="true"></i><span>اینستاگرام</span></span>
+              <span class="footer-social-item"><i class="bi bi-telegram" aria-hidden="true"></i><span>تلگرام</span></span>
+              <span class="footer-social-item"><i class="bi bi-linkedin" aria-hidden="true"></i><span>لینکدین</span></span>
+            </div>
+          </section>
+
+          <section class="col-sm-6 col-lg-3" aria-labelledby="footer-contact-title">
+            <h2 class="footer-heading" id="footer-contact-title">راه ارتباطی</h2>
+            <!-- ایمیل و شناسه تلگرام را با اطلاعات واقعی جایگزین کنید. -->
+            <div class="footer-contact-list">
+              <a class="footer-contact-link" href="mailto:your-email@example.com">
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <span class="footer-contact-copy">
+                  <span class="footer-contact-label">ایمیل</span>
+                  <span class="footer-contact-value">your-email@example.com</span>
+                </span>
+              </a>
+              <a class="footer-contact-link" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-telegram" aria-hidden="true"></i>
+                <span class="footer-contact-copy">
+                  <span class="footer-contact-label">تلگرام</span>
+                  <span class="footer-contact-value">t.me/your_username</span>
+                </span>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © <span data-current-year></span> Mohsen Zamani. تمام حقوق محفوظ است.
+          </p>
+          <a class="footer-back-top" href="#home">
+            <span>بازگشت به بالا</span><i class="bi bi-arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

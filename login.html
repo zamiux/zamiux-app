@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b223d" />
+    <meta name="description" content="ورود به حساب کاربری Mohsen Zamani" />
+    <title>ورود به حساب | Mohsen Zamani</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/login.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="login-page">
+      <section class="login-main" aria-labelledby="login-title">
+        <div class="login-form-shell">
+          <a class="form-brand" href="index.html" aria-label="Mohsen Zamani، صفحه اصلی">
+            <span class="brand-symbol" aria-hidden="true"><i class="bi bi-stars"></i></span>
+            <span>Mohsen Zamani</span>
+          </a>
+
+          <div class="form-heading">
+            <span class="form-kicker"><i class="bi bi-lock" aria-hidden="true"></i> ورود امن</span>
+            <h2 id="login-title">ورود به حساب</h2>
+            <p>ایمیل و رمز عبورت را وارد کن.</p>
+          </div>
+
+          <form id="loginForm" class="login-form auth-form" data-auth-message="فرم ورود هنوز به سامانهٔ احراز هویت متصل نشده است.">
+            <div class="form-field">
+              <label for="email">آدرس ایمیل</label>
+              <div class="input-wrap">
+                <i class="bi bi-envelope input-icon" aria-hidden="true"></i>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="password">کلمه عبور</label>
+              <div class="input-wrap password-wrap">
+                <i class="bi bi-key input-icon" aria-hidden="true"></i>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="کلمه عبور را وارد کن"
+                  required
+                />
+                <button
+                  class="password-toggle"
+                  id="passwordToggle"
+                  data-password-target="password"
+                  type="button"
+                  aria-label="نمایش کلمه عبور"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-eye" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-field captcha-field">
+              <label for="loginCaptchaAnswer">پاسخ این عبارت را وارد کن</label>
+              <div class="captcha-row">
+                <div class="captcha-challenge">
+                  <i class="bi bi-patch-question" aria-hidden="true"></i>
+                  <span data-captcha-question aria-live="polite"></span>
+                  <button class="captcha-refresh" type="button" data-captcha-refresh aria-label="ساخت عبارت تازه">
+                    <i class="bi bi-arrow-clockwise" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="input-wrap captcha-input-wrap">
+                  <i class="bi bi-calculator input-icon" aria-hidden="true"></i>
+                  <input
+                    id="loginCaptchaAnswer"
+                    name="captcha"
+                    type="text"
+                    inputmode="numeric"
+                    autocomplete="off"
+                    placeholder="پاسخ"
+                    data-captcha-answer
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button class="login-submit" type="submit">
+              <span>ورود به حساب</span>
+              <i class="bi bi-arrow-left" aria-hidden="true"></i>
+            </button>
+            <p class="login-status" id="loginStatus" role="status" aria-live="polite" hidden></p>
+          </form>
+
+          <p class="register-prompt">حساب کاربری نداری؟ <a href="register.html">ثبت‌نام کن</a></p>
+
+          <a class="back-home" href="index.html">
+            <i class="bi bi-arrow-right" aria-hidden="true"></i><span>بازگشت به صفحه اصلی</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>
